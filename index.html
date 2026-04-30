@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the elegance and performance of Mercedes luxury vehicles. Explore our range of exclusive cars and experience excellence in every detail."
+    />
+    <meta
+      name="keywords"
+      content="Mercedes, luxury vehicles, exclusive cars, performance, elegance, electric, hybrids, innovative design, advanced technology"
+    />
+    <title>Mercedes | Luxury cars</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- HEADER CON LA NAVEGACIÓN PRINCIPAL DE LA WEB -->
+    <header class="header">
+      <!-- Nuevo contenedor que agrupa logo + nav -->
+      <div class="header-nav-group">
+        <!-- Con aria-label explicamos la accion del boton -->
+        <a href="#" class="logo" aria-label="Mercedes-Benz home">
+          <img src="./Assets/Logo_Mercedes.png" alt="Mercedes Logo" />
+        </a>
+        <nav class="navegacion">
+          <ul>
+            <!-- los enlaces apuntan a las secciones correspondientes -->
+            <li><a href="#electric">ELECTRIC</a></li>
+            <li><a href="#maybach">MAYBACH</a></li>
+            <li><a href="#accessories">ACCESSORIES</a></li>
+            <li><a href="#stores">STORES</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Para los botones de accion: language, carrito y usuario, uso un div con 
+       tres botones, para cada accion 
+       Con aria-label explicamos la accion del boton-->
+      <div class="acciones">
+        <button class="button-language" aria-label="Change language">
+          <img src="./Assets/Language-Wrap.png" alt="Language Icon" />
+        </button>
+        <button class="button-cart" aria-label="Shopping Cart">
+          <img src="./Assets/Carrito.png" alt="Shopping Cart Icon" />
+        </button>
+        <button class="button-user" aria-label="User Account">
+          <img src="./Assets/Usuario.png" alt="User Account Icon" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <img
+          class="hero-img"
+          src="./Assets/portada.jpg"
+          alt="Mercedes-Benz CLS driving on a road"
+        />
+        <div class="hero-content">
+          <h1 class="hero-title">New Mercedes CLS</h1>
+          <p class="hero-text">The Power In Your Hands</p>
+        </div>
+      </section>
+      <section class="cars-section">
+        <div class="container">
+          <div class="cars-grid">
+            <article class="car-card">
+              <div>
+                <h2 class="car-type">Electric</h2>
+                <p class="car-name">Mercedes E450 Cabriolet</p>
+              </div>
+
+              <img
+                class="car-img"
+                src="./Assets/cars section/Merces E450 Cabriolet.png"
+                alt="Mercedes E450 Cabriolet"
+              />
+
+              <div class="car-card-footer">
+                <a class="more-info" href="#" target="_blank">More info</a>
+
+                <div class="car-colors" aria-label="Available colors">
+                  <span class="color color-white"></span>
+                  <span class="color color-red"></span>
+                  <span class="color color-blue"></span>
+                  <span class="color color-black"></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="car-card">
+              <div>
+                <h2 class="car-type">Hybrid</h2>
+                <p class="car-name">Mercedes SUV</p>
+              </div>
+
+              <img
+                class="car-img"
+                src="./Assets/cars section/Merces GLC SUV.png"
+                alt="Mercedes SUV"
+              />
+
+              <div class="car-card-footer">
+                <a class="more-info" href="#" target="_blank">More info</a>
+
+                <div class="car-colors" aria-label="Available colors">
+                  <span class="color color-black"></span>
+                  <span class="color color-yellow"></span>
+                  <span class="color color-red"></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="car-card">
+              <div>
+                <h2 class="car-type">Hybrid</h2>
+                <p class="car-name">Mercedes G-Class</p>
+              </div>
+
+              <img
+                class="car-img"
+                src="./Assets/cars section/Merces Benz-G-Class.png"
+                alt="Mercedes G-Class"
+              />
+
+              <div class="car-card-footer">
+                <a class="more-info" href="#" target="_blank">More info</a>
+
+                <div class="car-colors" aria-label="Available colors">
+                  <span class="color color-black"></span>
+                  <span class="color color-blue"></span>
+                  <span class="color color-red"></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="car-card">
+              <div>
+                <h2 class="car-type">Electric</h2>
+                <p class="car-name">Mercedes CLS N</p>
+              </div>
+
+              <img
+                class="car-img"
+                src="./Assets/cars section/Merces GLC.png"
+                alt="Mercedes CLS N"
+              />
+
+              <div class="car-card-footer">
+                <a class="more-info" href="#" target="_blank">More info</a>
+
+                <div class="car-colors" aria-label="Available colors">
+                  <span class="color color-black"></span>
+                  <span class="color color-yellow"></span>
+                  <span class="color color-red"></span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="dealer">
+        <h2>Find your nearest Mercedes dealer.</h2>
+        <p>
+          Browse over 1000 dealers worldwide, and find the one that best suits
+          your situation.
+        </p>
+      </section>
+      <section class="store-section">
+        <img
+          class="store-img"
+          src="./Assets/mapa-usa.png"
+          alt="Mapa nocturno de Estados Unidoscon luces de ciudades"
+        />
+        <div class="store-card">
+          <h2>Discover your local Mercedes partner store</h2>
+          <a href="#" target="_blank"> Find a partner store near you </a>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="container">
+          <div class="categories-grid">
+            <article class="category-card" id="electric">
+              <h2>Confort</h2>
+              <img
+                src="./Assets/confort.jpg"
+                alt="Mercedes-Benz electric vehicle"
+              />
+              <a href="https://www.mercedes.com/confort/"> More info </a>
+            </article>
+            <article class="category-card" id="maybach">
+              <h2>Technology</h2>
+              <img
+                src="./Assets/technology.png"
+                alt="Mercedes-Maybach interior detail"
+              />
+              <a href="https://www.mercedes.com/en/technology/"> More info </a>
+            </article>
+            <article class="category-card" id="accessories">
+              <h2>Accessories</h2>
+              <img
+                src="./Assets/accessories.jpg"
+                alt="Mercedes-Benz accessories detail"
+              />
+              <a href="https://shop.mercedes.com/vehicles/accessories">
+                More info
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="red-banner">
+        <img
+          class="red-banner-img"
+          src="./Assets/red-banner.png"
+          alt="Mercedes Maybach red car"
+        />
+
+        <div class="red-banner-content">
+          <h2>Red as temptation</h2>
+          <p>
+            Good design is what drives us, and we're proud to share that
+            Mercedes-Maybach has already won the prestigious Best Design Award
+            2023, as judged by the world's best product designers.
+          </p>
+        </div>
+      </section>
+      <section class="maybach-detail">
+        <div class="maybach-detail-content">
+          <h2>The Mercedes-Maybach wheel programme</h2>
+
+          <p>
+            The exclusive Mercedes-Maybach wheel programme, e.g. with optional
+            53.3 cm (21") Maybach forged wheels in multi-spoke design.
+          </p>
+
+          <a href="#" class="maybach-link">Learn More</a>
+        </div>
+
+        <img
+          class="maybach-detail-img"
+          src="./Assets/maybach-wheel.png"
+          alt="Mercedes-Maybach wheel detail"
+        />
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <p>
+          Ready to own the car of your dreams? Mercedes-Maybach are now
+          available at our dealers by appointment only.
+        </p>
+        <a href="#" class="footer-contact">Contact now</a>
+      </div>
+
+      <div class="footer-newsletter">
+        <h2>Join the power.</h2>
+        <p>Sign up for our newsletter.</p>
+
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email address here" />
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <label class="privacy-check">
+          <input type="checkbox" />
+          By signing up, I agree to the privacy policy.
+        </label>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">
+          <img src="./Assets/links RRSS/facebook.png" alt="Facebook link" />
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <img src="./Assets/links RRSS/insta.png" alt="Instagram link" />
+        </a>
+
+        <a href="#" aria-label="YouTube">
+          <img src="./Assets/links RRSS/youtube.png" alt="YouTube link" />
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+          <img src="./Assets/links RRSS/linkedn.png" alt="LinkedIn link" />
+        </a>
+
+        <a href="#" aria-label="TikTok">
+          <img src="./Assets/links RRSS/tiktok.png" alt="TikTok link" />
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h3>Explorer</h3>
+          <a href="#">Electric bikes</a>
+          <a href="#">City bikes</a>
+          <a href="#">Accessories</a>
+          <a href="#">Outlet</a>
+          <a href="#">Business</a>
+          <a href="#">Insurance Electric</a>
+          <a href="#">Size guide</a>
+        </div>
+
+        <div>
+          <h3>About</h3>
+          <a href="#">About us</a>
+          <a href="#">Journal</a>
+          <a href="#">Reviews</a>
+          <a href="#">Press</a>
+          <a href="#">Jobs</a>
+        </div>
+
+        <div>
+          <h3>Help</h3>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+          <a href="#">Delivery</a>
+          <a href="#">Assembly & manuals</a>
+          <a href="#">Payment options</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & conditions</a>
+        </div>
+      </div>
+      <a href="#" class="back-to-top" aria-label="Back to top">↑</a>
+    </footer>
+  </body>
+</html>

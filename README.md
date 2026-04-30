@@ -33,19 +33,13 @@ Seccion 4:
     .store-card tiene position: absolute.
     Con top y left, colocamos la caja encima de la imagen. Aunque aqui La diferencia es la caja en la que va el texto, ya que lleva un background diferente.
     Para que la imagen probe con object fit: cover, pero se deformaba, asi cambie a contain, y aun asi, no quedaba bien del todo, puse height en auto y asi al mantener la proporcion real, consegui el efecto correcto
-
     Para el HTML, de nuevo uso una seccion con la img y luego un div para contener la caja del texto, con un H2 y un a como enlace. Para que cuando cliques en el enlace, se abriese una pagina nueva, encontre la etiqueta target="_blank"
-
     He tenido que hacer una coreccion en esta seccion, porque al meter la siguiente seccion, esta se superponia en al siguiente, parece que con el css que tenia, le habia puesto a la class store.section un height fijo de 420px y al store-img un height: auto. Por lo que la imagen se hacia mas alta que el propio contenedor. Por lo que al quitar la altura fija del contenedor dejamos que sea la imagen la que mande en cuanto a la altura.
-    Co overflow hidden me aseguro que nada sobresalga.
-
+    Con overflow hidden me aseguro que nada sobresalga.
 Seccion 6: 
     Aqui tenemos de nuevo una imagen grande que ocupa todo el ancho, y una caja de texto encima, en la parte inferior izquierda. Para posicionarlos uso de nuevo position relative y absolute para poner la caja de texto encima de la imagen y 
-
-
 Seccion 7
     Esta seccion cambia, ahora tenemos dos columnas del mismo tamaño. A la izquierda el texto y a a la derecha la imagen. Dado que son dos columnas, utilizo de nuevo Grid, y le doy el mismo tamaño a las columnas, de 1fr 
-
 Finalmente para el FOOTER: 
     Tenemos: 
         Una primera seccion con un background gris y un texto + boton, para posicionarlos uso grid con jsutify content: space-between para separarlos por igual dentro de la caja

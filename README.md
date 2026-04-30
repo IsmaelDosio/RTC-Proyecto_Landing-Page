@@ -39,4 +39,19 @@ Seccion 4:
     He tenido que hacer una coreccion en esta seccion, porque al meter la siguiente seccion, esta se superponia en al siguiente, parece que con el css que tenia, le habia puesto a la class store.section un height fijo de 420px y al store-img un height: auto. Por lo que la imagen se hacia mas alta que el propio contenedor. Por lo que al quitar la altura fija del contenedor dejamos que sea la imagen la que mande en cuanto a la altura.
     Co overflow hidden me aseguro que nada sobresalga.
 
+Seccion 6: 
+    Aqui tenemos de nuevo una imagen grande que ocupa todo el ancho, y una caja de texto encima, en la parte inferior izquierda. Para posicionarlos uso de nuevo position relative y absolute para poner la caja de texto encima de la imagen y 
+
+
+Seccion 7
+    Esta seccion cambia, ahora tenemos dos columnas del mismo tamaño. A la izquierda el texto y a a la derecha la imagen. Dado que son dos columnas, utilizo de nuevo Grid, y le doy el mismo tamaño a las columnas, de 1fr 
+
+Finalmente para el FOOTER: 
+    Tenemos: 
+        Una primera seccion con un background gris y un texto + boton, para posicionarlos uso grid con jsutify content: space-between para separarlos por igual dentro de la caja
+        La zona central con la newsletter + data protection:
+            Aqui para que tanto el checkbox como el texto fuera todo clicable, va el input dentro del label, hice las dos opciones, todo clicable y solo checkbox clicable, pero al final me gusto mas esta opcion, y aprendi esta forma de hacerlo, y tambien es mas facil para el css tener todo dentro y darle una class. Asi con flex y justify content center, queda perfectamente alineado.
+        Uso de nuevo position relative y absolute para posicionar el boton de volver arriba de la pagina
+        
+
     

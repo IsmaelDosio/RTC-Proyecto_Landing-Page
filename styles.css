@@ -118,6 +118,15 @@ button {
   object-fit: contain;
 }
 
+/* MENU HAMBURGUESA - OCULTO EN DESKTOP */
+.menu-toggle {
+  display: none;
+}
+
+.menu-button {
+  display: none;
+}
+
 /* HERO */
 .hero {
   position: relative;
@@ -210,6 +219,7 @@ button {
 
 .car-colors {
   display: flex;
+  list-style: none;
   gap: 8px;
 }
 
@@ -317,7 +327,7 @@ button {
 }
 
 .category-card {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   background-color: var(--color-gray-light);
   border-radius: 4px;
@@ -476,16 +486,18 @@ button {
 }
 
 .newsletter-form {
-  display: flex;
-  justify-content: center;
-  max-width: 420px;
+  max-width: 500px;
   margin: 0 auto 20px;
+}
+
+.newsletter-input-group {
+  display: flex;
   border: 1px solid var(--color-white);
   border-radius: 30px;
   overflow: hidden;
 }
 
-.newsletter-form input {
+.newsletter-input-group input {
   flex: 1;
   padding: 12px 20px;
   border: none;
@@ -494,7 +506,7 @@ button {
   font-size: 11px;
 }
 
-.newsletter-form button {
+.newsletter-input-group button {
   border: none;
   padding: 12px 28px;
   border-radius: 30px;
@@ -510,11 +522,12 @@ button {
   align-items: center;
   gap: 8px;
   font-size: 11px;
+  margin-top: 20px;
 }
 
 .social-links {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 18px;
 }
@@ -527,7 +540,7 @@ button {
 
 .footer-links {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 700px;
   margin: 0 auto;
@@ -561,4 +574,169 @@ button {
   align-items: center;
   justify-content: center;
   font-size: 24px;
+}
+
+@media (max-width: 750px) {
+  .header {
+    position: relative;
+    height: 50px;
+    padding: 0 16px;
+  }
+
+  .header-nav-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .acciones {
+    display: none;
+  }
+
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .menu-button span {
+    width: 26px;
+    height: 2px;
+    background-color: var(--color-black-dark);
+    display: block;
+  }
+
+  .navegacion {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-gray-bg);
+    padding: 20px 0;
+    z-index: 10;
+  }
+
+  .navegacion ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navegacion li {
+    height: auto;
+    padding: 14px 0;
+  }
+
+  .menu-toggle:checked ~ .navegacion {
+    display: block;
+  }
+}
+
+/* HERO RESPONSIVE */
+.hero {
+  height: 360px;
+}
+
+.hero-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-content {
+  top: 45px;
+  left: 20px;
+  max-width: 260px;
+}
+
+.hero-content h1 {
+  font-size: 34px;
+}
+
+.hero-content p {
+  font-size: 12px;
+}
+
+/* CARS SECTION RESPONSIVE */
+.container {
+  width: 92%;
+  max-width: 100%;
+  padding-top: 20px;
+}
+
+.cars-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.car-card {
+  padding: 18px;
+}
+
+.car-type {
+  font-size: 22px;
+}
+
+.car-name {
+  font-size: 13px;
+}
+
+.car-img {
+  height: 150px;
+  margin: 14px 0;
+}
+
+.car-card-footer {
+  gap: 16px;
+}
+
+.more-info {
+  font-size: 11px;
+  padding: 8px 14px;
+}
+
+/* CATEGORIES RESPONSIVE */
+.categories {
+  overflow-x: hidden;
+  padding: 35px 20px;
+}
+
+.categories-grid {
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 20px;
+}
+
+.category-card {
+  width: 100%;
+}
+
+.category-card a {
+  width: auto;
+  align-self: flex-start;
+}
+
+/* RED BANNER RESPONSIVE */
+.red-banner {
+  height: 360px;
+}
+
+.red-banner-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.red-banner-content {
+  left: 20px;
+  bottom: 30px;
+  max-width: 300px;
+}
+
+.red-banner-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.red-banner-content p {
+  font-size: 11px;
+  line-height: 1.4;
 }

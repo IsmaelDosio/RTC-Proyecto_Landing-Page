@@ -49,3 +49,57 @@ Finalmente para el FOOTER:
         
 
     
+CORRECCIONES: 
+
+    1.Espacios en las imagenes: 
+        Corregidos los espacios en los nombres de carpetas y de las imagenes: 
+            1. Cars section --> Cars-section
+                Corrigo igualmente cada una de las imagenes, con guion. 
+            2. Tambien encontré la carpeta links RRSS, y la cambie a links-RRSS. 
+    
+    2. ARIA-LABEL en <section class="cars-section">
+        Gracias, cuando lo use, estaba pensando en accesibilidad, pero no cai en que usandolo asi con un div, no tenia sentido, ya que un div semanticamente no significa nada, por lo que el ARIA-LABEL no ayuda. 
+        He encontrado dos soluciones: 
+            1. Tu sugerencia de añadir role
+            Podria añadir role:list para car-colors y role:listitem para cada color, y de esta manera ya le estamos diciendo al navegador y por tanto al lector, que este elemento es una lista, y lo que es cada elemento de la lista. 
+
+            2. Tambien vi la posibilidad de cambiar la etiqueta div, por una que tenga ya significado semantico por si misma, y que sea mas limpio, menos codigo y lo único que habria que añadir una atributo mas en el CSS. Y es cambiar div por UL y li.
+
+            He optado por esta segunda opcion. Espero que resulte correcta, en mi cabeza despues de que lo hayas puntualizado tiene todo el sentido, y de paso me ha quedado mucho más claro el concepto de ARIA-LABEL. 
+
+    3. Uso incorrecto de target:_blank
+            1. En cars-section dado que son enlaces internos, el usuario sigue en la misma pestaña por lo que quito target:_blank de aqui y dejo para esta demo el href con #modelo correspondiente. 
+            
+            2. Añado este atributo en section class="categories", porque aqui, al ser un enlace externo, se abrira en una pestaña nueva 
+    
+    4. Checkbox fuera del form: 
+            Es cierto, tal y como lo tengo el formulario estaria enviando la informacion de la subscripcion con el email pero no el ok a la politica de privacidad, por lo que no podriamos validar internamente si el usuario da su consentimiento o no.
+
+            Para corregirlo, meto el checkbox dentro del form, pero ahora necesito separar el input del checkbox, asi que hago un div con una clase para el input y dejo el checkbox como lo tenia. 
+            Tengo que ajustar el CSS
+                Al quitarle flex a newsletter form, ya se comportan como dos bloques normales, uno debajo de otro. Y seguimos usando flex en cada uno de los dos bloques para colocar bien los elementos.
+
+    5. RESPONSIVE: 
+
+        Para que me sea más facil a la hora de revisar, voy a poner todas las medias queries al final del CSS en lugar de agruparlas cerca del CSS de la seccion que aplique en cada caso. De esta manera tengo el CSS desktop y CSS móvil
+
+        Header hamburguesa.
+            Empiezo atacando este bloque: el objetivo es ocultar el menú normal para que aparezca un botón hamburguesa.
+
+            Para esto en el HTML añado un checkbox, que en escritorio estara oculto, y sera el CSS el que sepa si esta marcado o no. 
+            El punto de corte lo pongo en 750px, a partir de ahi, mostramos el menu hamburguesa. 
+
+            Cuando llegamos al puto de corte, ocultamos el menu navegacion con display: none y pasamos a mostrar la hamburguesa.
+
+            Para el desplegable en el modo responsive, uso:   
+            .menu-toggle:checked ~ .navegacion {
+            display: block;
+            }
+            Cuando el checkbox esta marcado, entonces busca a su hermano que venga despues en el HTML y lo muestra. Y se marca cuando hacemos clic en el menu hamburguesa
+
+        Hero móvil.
+        Cards de coches.
+        Red banner.
+        Comprobación final de scroll horizontal.
+        
+

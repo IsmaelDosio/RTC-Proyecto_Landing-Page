@@ -14,6 +14,7 @@
     <title>Mercedes | Luxury cars</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <!-- HEADER CON LA NAVEGACIÓN PRINCIPAL DE LA WEB -->
     <header class="header">
@@ -23,6 +24,19 @@
         <a href="#" class="logo" aria-label="Mercedes-Benz home">
           <img src="./Assets/Logo_Mercedes.png" alt="Mercedes Logo" />
         </a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+        <label
+          for="menu-toggle"
+          class="menu-button"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
         <nav class="navegacion">
           <ul>
             <!-- los enlaces apuntan a las secciones correspondientes -->
@@ -41,9 +55,11 @@
         <button class="button-language" aria-label="Change language">
           <img src="./Assets/Language-Wrap.png" alt="Language Icon" />
         </button>
+
         <button class="button-cart" aria-label="Shopping Cart">
           <img src="./Assets/Carrito.png" alt="Shopping Cart Icon" />
         </button>
+
         <button class="button-user" aria-label="User Account">
           <img src="./Assets/Usuario.png" alt="User Account Icon" />
         </button>
@@ -61,6 +77,7 @@
           <p class="hero-text">The Power In Your Hands</p>
         </div>
       </section>
+
       <section class="cars-section">
         <div class="container">
           <div class="cars-grid">
@@ -72,19 +89,19 @@
 
               <img
                 class="car-img"
-                src="./Assets/cars section/Merces E450 Cabriolet.png"
+                src="./Assets/cars-section/Merces-E450-Cabriolet.png"
                 alt="Mercedes E450 Cabriolet"
               />
 
               <div class="car-card-footer">
-                <a class="more-info" href="#" target="_blank">More info</a>
+                <a class="more-info" href="#model_e450_cabriolet">More info</a>
 
-                <div class="car-colors" aria-label="Available colors">
-                  <span class="color color-white"></span>
-                  <span class="color color-red"></span>
-                  <span class="color color-blue"></span>
-                  <span class="color color-black"></span>
-                </div>
+                <ul class="car-colors" aria-label="Available colors">
+                  <li class="color color-white"></li>
+                  <li class="color color-red"></li>
+                  <li class="color color-blue"></li>
+                  <li class="color color-black"></li>
+                </ul>
               </div>
             </article>
 
@@ -96,18 +113,18 @@
 
               <img
                 class="car-img"
-                src="./Assets/cars section/Merces GLC SUV.png"
+                src="./Assets/cars-section/Merces-GLC-SUV.png"
                 alt="Mercedes SUV"
               />
 
               <div class="car-card-footer">
-                <a class="more-info" href="#" target="_blank">More info</a>
+                <a class="more-info" href="#model_SUV">More info</a>
 
-                <div class="car-colors" aria-label="Available colors">
-                  <span class="color color-black"></span>
-                  <span class="color color-yellow"></span>
-                  <span class="color color-red"></span>
-                </div>
+                <ul class="car-colors" aria-label="Available colors">
+                  <li class="color color-black"></li>
+                  <li class="color color-yellow"></li>
+                  <li class="color color-red"></li>
+                </ul>
               </div>
             </article>
 
@@ -119,18 +136,18 @@
 
               <img
                 class="car-img"
-                src="./Assets/cars section/Merces Benz-G-Class.png"
+                src="./Assets/cars-section/Merces-Benz-G-Class.png"
                 alt="Mercedes G-Class"
               />
 
               <div class="car-card-footer">
-                <a class="more-info" href="#" target="_blank">More info</a>
+                <a class="more-info" href="#model_G-Class">More info</a>
 
-                <div class="car-colors" aria-label="Available colors">
-                  <span class="color color-black"></span>
-                  <span class="color color-blue"></span>
-                  <span class="color color-red"></span>
-                </div>
+                <ul class="car-colors" aria-label="Available colors">
+                  <li class="color color-black"></li>
+                  <li class="color color-blue"></li>
+                  <li class="color color-red"></li>
+                </ul>
               </div>
             </article>
 
@@ -142,25 +159,27 @@
 
               <img
                 class="car-img"
-                src="./Assets/cars section/Merces GLC.png"
+                src="./Assets/cars-section/Merces-GLC.png"
                 alt="Mercedes CLS N"
               />
 
               <div class="car-card-footer">
-                <a class="more-info" href="#" target="_blank">More info</a>
+                <a class="more-info" href="#model_CLS_N">More info</a>
 
-                <div class="car-colors" aria-label="Available colors">
-                  <span class="color color-black"></span>
-                  <span class="color color-yellow"></span>
-                  <span class="color color-red"></span>
-                </div>
+                <ul class="car-colors" aria-label="Available colors">
+                  <li class="color color-black"></li>
+                  <li class="color color-yellow"></li>
+                  <li class="color color-red"></li>
+                </ul>
               </div>
             </article>
           </div>
         </div>
       </section>
+
       <section class="dealer">
         <h2>Find your nearest Mercedes dealer.</h2>
+        <!-- Creo que aqui habia una pequeña errata, quité el you final -->
         <p>
           Browse over 1000 dealers worldwide, and find the one that best suits
           your situation.
@@ -177,6 +196,7 @@
           <a href="#" target="_blank"> Find a partner store near you </a>
         </div>
       </section>
+
       <section class="categories">
         <div class="container">
           <div class="categories-grid">
@@ -186,7 +206,9 @@
                 src="./Assets/confort.jpg"
                 alt="Mercedes-Benz electric vehicle"
               />
-              <a href="https://www.mercedes.com/confort/"> More info </a>
+              <a href="https://www.mercedes.com/en/confort/" target="_blank">
+                More info
+              </a>
             </article>
             <article class="category-card" id="maybach">
               <h2>Technology</h2>
@@ -194,7 +216,9 @@
                 src="./Assets/technology.png"
                 alt="Mercedes-Maybach interior detail"
               />
-              <a href="https://www.mercedes.com/en/technology/"> More info </a>
+              <a href="https://www.mercedes.com/en/technology/" target="_blank">
+                More info
+              </a>
             </article>
             <article class="category-card" id="accessories">
               <h2>Accessories</h2>
@@ -202,13 +226,17 @@
                 src="./Assets/accessories.jpg"
                 alt="Mercedes-Benz accessories detail"
               />
-              <a href="https://shop.mercedes.com/vehicles/accessories">
+              <a
+                href="https://www.mercedes.com/en//accessories"
+                target="_blank"
+              >
                 More info
               </a>
             </article>
           </div>
         </div>
       </section>
+
       <section class="red-banner">
         <img
           class="red-banner-img"
@@ -258,34 +286,36 @@
         <p>Sign up for our newsletter.</p>
 
         <form class="newsletter-form">
-          <input type="email" placeholder="Enter your email address here" />
-          <button type="submit">Subscribe</button>
-        </form>
+          <div class="newsletter-input-group">
+            <input type="email" placeholder="Enter your email address here" />
+            <button type="submit">Subscribe</button>
+          </div>
 
-        <label class="privacy-check">
-          <input type="checkbox" />
-          By signing up, I agree to the privacy policy.
-        </label>
+          <label class="privacy-check">
+            <input type="checkbox" />
+            By signing up, I agree to the privacy policy.
+          </label>
+        </form>
       </div>
       <div class="social-links">
         <a href="#" aria-label="Facebook">
-          <img src="./Assets/links RRSS/facebook.png" alt="Facebook link" />
+          <img src="./Assets/links-RRSS/facebook.png" alt="Facebook link" />
         </a>
 
         <a href="#" aria-label="Instagram">
-          <img src="./Assets/links RRSS/insta.png" alt="Instagram link" />
+          <img src="./Assets/links-RRSS/insta.png" alt="Instagram link" />
         </a>
 
         <a href="#" aria-label="YouTube">
-          <img src="./Assets/links RRSS/youtube.png" alt="YouTube link" />
+          <img src="./Assets/links-RRSS/youtube.png" alt="YouTube link" />
         </a>
 
         <a href="#" aria-label="LinkedIn">
-          <img src="./Assets/links RRSS/linkedn.png" alt="LinkedIn link" />
+          <img src="./Assets/links-RRSS/linkedn.png" alt="LinkedIn link" />
         </a>
 
         <a href="#" aria-label="TikTok">
-          <img src="./Assets/links RRSS/tiktok.png" alt="TikTok link" />
+          <img src="./Assets/links-RRSS/tiktok.png" alt="TikTok link" />
         </a>
       </div>
 
